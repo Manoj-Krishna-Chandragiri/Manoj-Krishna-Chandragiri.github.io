@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5); 
     color: #333;
     text-align: center;
     padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
@@ -16,6 +19,7 @@ body {
 }
 
 h1 {
+    font-family: 'Playfair Display', serif;
     color: #2c3e50;
 }
 
@@ -25,6 +29,22 @@ h2 {
 
 p {
     font-size: 16px;
+    line-height: 1.6;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #2980b9;
 }
 
 .socials a {
@@ -40,4 +60,26 @@ p {
 
 .socials a:hover {
     background: #2980b9;
+}
+
+.dark-mode {
+    background: linear-gradient(to right, #2c3e50, #4ca1af); 
+    color: #fff;
+}
+
+.dark-mode .container {
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode h1, .dark-mode h2 {
+    color: #ddd;
+}
+
+.dark-mode .socials a, .dark-mode button {
+    background: #555;
+}
+
+.dark-mode .socials a:hover, .dark-mode button:hover {
+    background: #777;
 }
