@@ -1,0 +1,5 @@
+# Create a directory if it doesn't exist
+mkdir -p public
+
+# Create CNAME file with your domain
+echo "manojkrishna.me" > public/CNAME
