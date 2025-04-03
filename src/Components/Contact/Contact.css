@@ -1,0 +1,144 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin: 18px 150px;
+}
+.icon{
+    height: 24px;
+    fill: white;
+}
+.contact-title{
+    text-align: center;
+}
+
+.contact-section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contact-left{
+    padding: 30px 5px;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.contact-left h1{
+    font-size: 60px;
+    background: linear-gradient(270deg,#DF8908 80%,#B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+}
+.contact-left p{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.contact-detail{
+    display: flex;
+    gap: 25px;
+}
+
+.contact-right{
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.contact-right label{
+    font-size: 20px; 
+}
+.contact-right input{
+    border: none;
+    padding: 15px 15px;
+    border-radius: 5px;
+    background: #32323c;
+    color: #c3c3c3;
+    outline: none;
+}
+.contact-right textarea{
+    border: none;
+    padding: 15px 15px;
+    border-radius: 5px;
+    background: #32323c;
+    color: #c3c3c3;
+    outline: none;
+    resize: none;
+}
+.contact-right button{
+    border: none;
+    width: 35%;
+    color: white;
+    font-size: 1.2rem;
+    background: linear-gradient(267deg,#DF8908 0.36%,#B415FF 102.06%);
+    padding: 15px 15px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+.contact-right button:hover{
+    transform: scale(1.05);
+}
+
+@media (max-width:1000px) {
+    .contact{
+        margin: 32px 50px;
+    }
+}
+
+@media (max-width:800px) {
+    .contact-section{
+        flex-direction: column;
+    }
+    .contact-left{
+        max-width: none;
+        width: 100%;
+        padding-top: 0;
+    }
+    .contact-details{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contact-left h1{
+        font-size: 38px;
+    }
+    .contact-left p{
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 0;
+        text-align: start;
+    }
+    .contact-detail{
+        gap: 12px;
+    }
+    .contact-detail .icon{
+        height: 20px;
+    }
+    .contact-detail p{
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    .contact-detail{
+        align-items: center;
+    }
+    .contact-right{
+        margin-top: 10px;
+    }
+    .contact-right label{
+        font-size: 17px;
+    }
+    .contact-right button{
+        font-size: 3vw;
+    }
+}

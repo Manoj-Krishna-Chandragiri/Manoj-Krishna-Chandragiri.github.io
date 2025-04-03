@@ -1,0 +1,18 @@
+.autotext{
+    background: linear-gradient(264deg,#DF8908 15.09%,#B415FF 106.28% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: normal;
+    
+}
+@media (max-width:800px) {
+    .h1-autotext{
+        font-size: 45px;
+    }
+}
+@media (max-width:600px) {
+    .h1-autotext{
+        font-size: 40px;
+    }
+}
