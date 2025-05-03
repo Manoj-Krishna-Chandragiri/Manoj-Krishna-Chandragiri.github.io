@@ -1,15 +1,15 @@
 const projectData = [
     {
-        title : "LearnHub",
-        description : 'It is an educational platform developed using React.js for IIT-JEE aspirants curating top YouTube videos. It features a Complete Revision Section, Quick Revision Section, PYQs Practice Videos and JEE Tips and Tricks section',
-        url : "https://learnhub-jee-mains.netlify.app/",
-        image : "/websites-image/learnhub.png"
-    },
+        title: "Meals By Manoj",
+        description: 'A user-friendly food delivery web app offering a curated menu of homemade meals. Built with HTML, CSS, and JavaScript, it features an intuitive UI, responsive design, and smooth order placement to enhance the user experience.',
+        url: "https:meals-by-manoj.manojkrishna.me",
+        image: "/websites-image/Meals-By-Manoj-Dark-Theme.jpg"
+    },    
     {
-        title : "Temperature Change Impact Viewer",
-        description : 'It is an interactive web application that demonstrates the effects of temperature changes using dynamic visualizations, such as charts and graphs, using real-world climate data from reliable sources',
-        url : "https://tcifv.netlify.app/",
-        image : "/websites-image/tciv.png"
+        title: "Enhancing Rail Madad with AI-Powered Complaint Management",
+        description: 'An intelligent complaint management system integrated into Rail Madad using AI and ML to automate complaint classification, prioritize urgent issues, and provide real-time updates to passengers, improving resolution speed and user satisfaction.',
+        url: "https:rail-madad.manojkrishna.me",
+        image: "/websites-image/Rail-Madad-Login-Page.jpg"
     },
     {
         title : "Chat Easy",
