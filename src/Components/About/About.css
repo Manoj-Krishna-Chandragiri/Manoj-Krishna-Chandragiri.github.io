@@ -1,0 +1,175 @@
+.about{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    position: relative;
+    gap: 10px;
+   
+}
+.about-title{
+    text-align: center;
+}
+.about-sections{
+    display: flex;
+    justify-content: space-around;
+}
+.about-left{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+.about-left img{
+    height: 350px;
+    width: 250px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 15px;
+}
+
+.about-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75%;
+    padding: 20px;
+}
+.about-para{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    gap: 20px;
+    font-size: 17px;
+    line-height: 33px;
+}
+.about-para p{
+    font-weight: 300;  
+}
+.about-skills{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 16px;
+}
+.about-skill{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    transition: 0.3s;
+}
+.about-skill:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.about-skill p{
+    min-width: 120px;
+    text-transform: uppercase;
+}
+.about-skill hr{
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 8px;
+    border-radius: 50px;
+    background: linear-gradient(264deg,#DF8908 -5.09%,#B415FF 106.28% );
+}
+.about-achivements{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.achivement{
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 3px;
+}
+.achivement h1{
+    font-size: 50px;
+    font-weight: 600;
+    background: linear-gradient(270deg,#DF8908 50.41%,#B415FF 99.28% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.center-achivement{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+.achivement:hover h1{
+    transform: scale(1.12);
+    transition: 0.5s;
+}
+.achivement:hover p{
+    transform: scale(1.12);
+    transition: 0.5s;
+}
+
+@media (max-width:1000px) {
+    .about-left{
+        display: none;
+    }
+    .about-right{
+        width: 100%;
+    }
+    .about-skills{
+        margin-top: 30px;
+    }
+    .about-para p{
+        font-size: 16px;
+        line-height: 36px;
+    }
+    .about-achivements{
+        margin-top: 0px;
+    }
+    .about-skill{
+        gap: 0;
+    }
+    .about-skill p{
+        font-size: 17px;
+    }
+    .achivement h1{
+        font-size: 37px;
+    }
+    .achivement p{
+        font-size: 1.5vw;
+        letter-spacing: 2.5px;
+    }
+}
+
+@media (max-width:600px) {
+    .about{
+        padding: 0 30px;
+    }
+    .about-right{
+        padding: 0;
+    }
+    .about-para{
+        margin-top: 20px;
+    }
+    .about-para p{
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .about-skill p{
+        min-width: 90px;
+        font-size: 14px;
+    }
+    .about-achivements{
+        margin-top: 20px;
+    }
+    .center-achivement{
+        padding: 0 5px;
+    }
+    .achivement h1{
+        font-size: 30px;
+    }
+    .achivement p{
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    
+}
