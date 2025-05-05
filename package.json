@@ -17,7 +17,12 @@
     "compare-detailed": "git diff --stat main...gh-pages",
     "branch-history": "git log --graph --oneline --all",
     "branch-status": "git status",
-    "recent-activity": "git for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(refname:short)'"
+    "recent-activity": "git for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(refname:short)'",
+    "compare-recent": "git log -p gh-pages@{4.minutes.ago}..gh-pages",
+    "prepare-pr": "git push origin gh-pages && gh pr create --base main --head gh-pages",
+    "push-history": "git reflog --date=relative gh-pages",
+    "sync-branches": "git fetch origin && git merge origin/main && git push origin gh-pages",
+    "view-pr": "gh pr list --base main --head gh-pages"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
