@@ -9,10 +9,15 @@ export default defineConfig({
     assetsDir: 'assets',
     rollupOptions: {
       output: {
-        // Ensure proper file extensions and formats
+        // Ensure extensions are explicit and content types are correct
         entryFileNames: 'assets/[name].[hash].js',
         chunkFileNames: 'assets/[name].[hash].js',
-        assetFileNames: 'assets/[name].[hash].[ext]'
+        assetFileNames: 'assets/[name].[hash].[ext]',
+        // Ensure modules are processed correctly
+        format: 'es',
+        generatedCode: {
+          preset: 'es2015'
+        }
       }
     }
   },
