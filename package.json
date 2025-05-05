@@ -9,21 +9,8 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "switch-gh-pages": "git checkout gh-pages",
-    "switch-main": "git checkout main",
-    "compare-branches": "git diff main...gh-pages",
-    "compare-detailed": "git diff --stat main...gh-pages",
-    "branch-history": "git log --graph --oneline --all",
-    "branch-status": "git status",
-    "recent-activity": "git for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(refname:short)'",
-    "compare-recent": "git log -p gh-pages@{4.minutes.ago}..gh-pages",
-    "prepare-pr": "git push origin gh-pages && gh pr create --base main --head gh-pages",
-    "push-history": "git reflog --date=relative gh-pages",
-    "sync-branches": "git fetch origin && git merge origin/main && git push origin gh-pages",
-    "view-pr": "gh pr list --base main --head gh-pages",
-    "serve": "vite preview --host"
+    "serve": "serve -s dist",
+    "render-build": "npm install && npm run build"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -42,7 +29,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
-    "gh-pages": "^6.3.0",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "serve": "^14.0.1"
   }
 }
