@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Type" content="text/javascript; charset=utf-8">
+    <!-- Explicitly declare content type -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Manoj Portfolio</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8GWXHMP3RB"></script>
@@ -17,11 +18,10 @@
       gtag('js', new Date());
       gtag('config', 'G-8GWXHMP3RB');
     </script>
-    <script type="module" crossorigin src="/assets/index.c9d6cf1e.js"></script>
-    <link rel="stylesheet" href="/assets/index.ebdf16f2.css">
   </head>
   <body>
     <div id="root"></div>
-    
+    <!-- Notice the absence of type="module" attribute and direct path reference -->
+    <script src="/src/main.jsx"></script>
   </body>
 </html>
