@@ -5,8 +5,8 @@
   "type": "module",
   "homepage": "https://manojkrishna.me",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite --force",
+    "build": "vite build --emptyOutDir",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
@@ -22,7 +22,8 @@
     "prepare-pr": "git push origin gh-pages && gh pr create --base main --head gh-pages",
     "push-history": "git reflog --date=relative gh-pages",
     "sync-branches": "git fetch origin && git merge origin/main && git push origin gh-pages",
-    "view-pr": "gh pr list --base main --head gh-pages"
+    "view-pr": "gh pr list --base main --head gh-pages",
+    "serve": "vite preview --host"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
