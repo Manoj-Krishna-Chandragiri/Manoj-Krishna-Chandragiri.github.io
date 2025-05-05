@@ -9,18 +9,17 @@ export default defineConfig({
     assetsDir: 'assets',
     rollupOptions: {
       output: {
-        // Ensure extensions are explicit and content types are correct
+        // Ensure file extensions match expected MIME types
         entryFileNames: 'assets/[name].[hash].js',
         chunkFileNames: 'assets/[name].[hash].js',
-        assetFileNames: 'assets/[name].[hash].[ext]',
-        // Ensure modules are processed correctly
-        format: 'es',
-        generatedCode: {
-          preset: 'es2015'
-        }
+        assetFileNames: 'assets/[name].[hash].[ext]'
       }
-    }
+    },
+    // Ensure proper HTML handling
+    emptyOutDir: true,
+    // Copy files from public directory as-is
+    copyPublicDir: true
   },
-  // Add base path for GitHub Pages deployment
+  // Base path for GitHub Pages
   base: '/'
 })
