@@ -1,22 +1,34 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.jsx'
+import { Contact, About, Projects, Home } from './Components'
 import './index.css'
-import { Route, createRoutesFromElements, createHashRouter, RouterProvider } from 'react-router-dom'
-import {Home,About,Contact,Projects} from './Components/index.js'
-import ReactGA from "react-ga4";
 
-// Initialize Google Analytics
-ReactGA.initialize("G-8GWXHMP3RB");
-
-const router = createHashRouter(createRoutesFromElements(
-  <Route path='/' element={<App/>}>
-    <Route path='about' element={<About/>}/>
-    <Route path='contact' element={<Contact/>}/>
-    <Route path='projects' element={<Projects/>}/>
-    <Route path='' element={<Home/>}/>
-  </Route>
-))
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App/>,
+    children: [
+      {
+        path: "about",
+        element: <About/>
+      },
+      {
+        path: "contact", 
+        element: <Contact/>
+      },
+      {
+        path: "projects",
+        element: <Projects/>  
+      },
+      {
+        path: "",
+        element: <Home/>
+      }
+    ]
+  }
+])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

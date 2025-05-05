@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navbar, Footer } from './Components'
 import { Outlet } from 'react-router-dom'
-import RouteChangeTracker from './components/RouteChangeTracker'
+import RouteChangeTracker from './Components/RouteChangeTracker'
 
 const App = () => {
   return (
