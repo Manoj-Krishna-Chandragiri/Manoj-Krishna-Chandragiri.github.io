@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className='about'>
       <div className="about-title">
-        <h1><Autotext val= {val}></Autotext></h1>
+        <h1><Autotext val={val}></Autotext></h1>
       </div>
       <div className="about-sections">
         <div className="about-left">

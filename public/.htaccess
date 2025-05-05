@@ -2,6 +2,9 @@
 <IfModule mod_mime.c>
   AddType application/javascript .js
   AddType application/javascript .mjs
+  AddType application/javascript .jsx
+  AddType application/json .json
+  AddType text/css .css
 </IfModule>
 
 # Fallback for GitHub Pages
@@ -11,6 +14,12 @@
   </FilesMatch>
   <FilesMatch "\.mjs$">
     Header set Content-Type "application/javascript"
+  </FilesMatch>
+  <FilesMatch "\.jsx$">
+    Header set Content-Type "application/javascript"
+  </FilesMatch>
+  <FilesMatch "\.json$">
+    Header set Content-Type "application/json"
   </FilesMatch>
 </IfModule>
 

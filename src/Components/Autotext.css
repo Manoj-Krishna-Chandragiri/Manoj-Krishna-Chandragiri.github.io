@@ -1,3 +1,9 @@
+.autotext-wrapper {
+    display: inline-block;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
 .autotext{
     background: linear-gradient(264deg,#DF8908 15.09%,#B415FF 106.28% );
     background-clip: text;

@@ -16,10 +16,9 @@ const Projects = () => {
       <h1 className="project-autotext"><Autotext val={val}></Autotext></h1>
       <div className="projects">
         {projectData.map((project, index) => (
-          <div className="project" id={index}>
-
+          <div className="project" key={`project-${index}`} id={index}>
             <div className="project-hover">
-            <img className="project-image" src={project.image} alt="" />
+            <img className="project-image" src={project.image} alt={project.title} />
               <h1>{project.title}</h1>
               <p className="project-description">{project.description}</p>
               <div className="visit">
