@@ -10,7 +10,14 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "switch-gh-pages": "git checkout gh-pages",
+    "switch-main": "git checkout main",
+    "compare-branches": "git diff main...gh-pages",
+    "compare-detailed": "git diff --stat main...gh-pages",
+    "branch-history": "git log --graph --oneline --all",
+    "branch-status": "git status",
+    "recent-activity": "git for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(refname:short)'"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
