@@ -18,5 +18,5 @@ export default defineConfig({
     copyPublicDir: true
   },
   // Base path for production
-  base: '/'
+  base: './'
 })
